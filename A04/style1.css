@@ -1,0 +1,14 @@
+@CHARSET "ISO-8859-1";
+body
+{
+font-size:100%;
+background-color:#AFFFF0;
+color:red;
+margin:10px;
+}
+
+ul {list-style:circle;}
+ol {list-style:upper-roman;}
+
+a:link {color:green;}
+a:hover {color:red;}
