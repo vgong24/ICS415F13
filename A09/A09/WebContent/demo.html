@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="initial-scale=1">
+<!-- Style Sheet -->
+
+<link href="../../../css/bootstrap.css" rel="stylesheet" type="test/css">
+<link href="../../../css/bootstrap.min.css" rel="stylesheet" type="test/css">
+<link href="../../../css/sticky-footer.css" rel="stylesheet">
+
+<title>Assignment 09</title>
+
+</head>
+<body>
+	<div id="wrap">
+	<header class="page-header">
+		<h1>Demo Header</h1>
+		<h6>Site description</h6>
+	</header>
+	
+	<!-- Navigation Bar -->
+	<div class="navbar navbar-default">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle=
+"collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Home</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="#">Themify</a></li>
+				<li><a href="#">IconDock</a></li>
+				<li><a href="#">N.Design</a></li>
+			
+			</ul>
+		
+		<form id="searchbar">
+			<input type="search" id="s" placeholder="Search">
+		</form>
+		</div>
+	</div>
+	
+	<!-- Content -->
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-md-2">
+			<h4>Flickr Sidebar</h4>
+		
+		</div>
+			<div class="col-md-8">
+				<div class="contentheader">
+					<h1 class="header">
+						<a href="#">Just a post Title</a>
+					</h1>
+					<time datetime="2001-05-08" pubdate>May 8, 2011</time>
+					<em>in</em>
+					<a href="#">Category</a>
+				</div>
+				<p>
+			Copy the .html files to the A08 directory; the .css files to 
+the A08/css directory. Edit demo-step1.html and final.html 
+to point to the correct css directory for the style sheets.
+
+As you go through the tutorial pay particular attention to the styles 
+applied to each element. Use the “Inspect Element” feature to see the 
+styles applied to the elements. Change the size of your browser and see 
+the affects on the styles.
+
+Think about these questions while going through the CSS files:
+
+In ‘wide’ screen mode, what causes the content and sidebar to be 
+side-by-side?
+In the ‘fluid’ mode, what are the widths of the content and sidebar
+How does the CSS Media Query force a single column layout for narrow 
+screens?
+How would you support more than two columns in the ‘wide’ and ‘fluid’ 
+mode?
+Try and add a left sidebar and move the Flickr widget into it. What is 
+the correct behavior for the Flickr widget in the one column mode? 
+(Should it be above the contents or below?)
+
+The Responsinator is a valuable tool for viewing your web site in 
+different widths.
+
+Important note for Chrome users: you must start Chrome with the 
+-allow-file-access-from-files command line switch in order to load style 
+files and javascript associated with local  files.
+
+Submission instructions:
+Upload your project files to the A08 directory in your GitHub account. 
+Email Carleton Moore with a link to your GitHub A08 directory.
+
+Note: the subject line must be [ICS 415: A08]. If the subject line is 
+different, then I might not see the email and you might not get credit 
+for this assignment.
+
+Due date: This assignment is due Tuesday Sep, 10th by 1pm.
+				</p>
+				</div>
+				<!-- Span 10 content -->
+		
+				<div class="col-md-2">
+					<h4 class="widgettitle">Sidebar</h4>
+				</div>
+				<!-- Span 2 sidebar -->
+			</div>
+			<!-- Row 1-->
+		</div>
+			<!-- Container Fluid -->
+			</div>
+	<footer>
+		<div class="container">
+		
+		<p class="text-muted credit">
+			"site made by Victor"
+		</p>
+		</div>
+	</footer>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
