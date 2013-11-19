@@ -1,0 +1,71 @@
+body {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.navbar {
+    margin-bottom: 30px;
+}
+.navbar-nav.nav-justified > li {
+    float: none;
+}
+.navbar-inverse {
+    background-color: #004EF5;
+}
+.navbar-inverse .navbar-nav > .active > a {
+    background-color: #087BF8;
+}
+.navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+color: #ffffff;
+background-color: #0811F8;
+}
+.navbar-inverse .navbar-nav > .active > a: hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav >li > a: hover, .navbar-inverse .navbar-nav > li > a {
+    background-color: #0811F8;
+}
+.navbar-inverse .navbar-nav > li > a,.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .active > a {
+    color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a: hover, .navbar-inverse .navbar-nav > .open > a: focus {
+    color: #ffffff;
+    background-color: #087BF8;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+color: #ffffff;
+background-color: #0811F8;
+}
+
+.myBackground {
+    background-color: #0CA9F3;
+}
+.logo {
+    width: auto;
+    height: 226px;
+}
+img.no-resize {
+    min-height: 40px: min-width: 50px;
+    margin: 0 auto;
+    height: 275px;
+    float: left;
+}
+.img-responsive {
+    margin: 0 auto;
+}
+.myImg {
+    height: 150px;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.myBG {
+    height:100%;
+    width:100%;
+    background-color:white;
+    background-image:url('../assets/bd.jpg');
+    background-repeat:no-repeat;
+    background-size:100%;
+   
+}
+
