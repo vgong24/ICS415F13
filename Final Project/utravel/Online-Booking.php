@@ -66,7 +66,7 @@ $online_members = mysql_num_rows($sql7);
                             <a href="home.html">Home</a>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <a href="about.html">About</a>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services
@@ -150,13 +150,22 @@ $online_members = mysql_num_rows($sql7);
         <!--Line word -->
         <div width="100%"class="container col-lg-12 myBG">
             <h1>Log In</h1><br>
-            <p>Online Guests: <?php echo $online_guests; ?></p>
-            <p>Online Members: <?php echo $online_members; ?></p>
+            <p><h3>Online Guests: <?php echo $online_guests; ?></h3></p>
+            <p><h3>Online Members: <?php echo $online_members; ?></h3></p>
             
             <!-- LOG IN -->
-            <a href="sign-up.php">Sign Up</a>
-            <a href="login.php">Log In</a>
-            <a href="logout.php">Log Out</a>
+            
+            <?php
+                if(!isset($_SESSION['user'])){
+                    echo "<a href='login.php' type='button'class='btn btn-primary'>Log In</a>";
+                    echo " ";
+                    echo "<a href='sign-up.php' type='button' class='btn btn-default'>Sign Up</a>";
+                }else{
+                    echo '<a href="logout.php" type="button" class="btn btn-info">Log Out</a>';
+                }
+            ?>
+            
+            
             
             
             
@@ -165,7 +174,10 @@ $online_members = mysql_num_rows($sql7);
             
             
         </div>
+    <div class="navbar navbar-primary navbar-static-bottom">
     
+        <p class = "navbar-text pull-right">Site made by Victor</p>
+    </div>
         <!--<script src="../js/bootstrap.js"></script>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	-->

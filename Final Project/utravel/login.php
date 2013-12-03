@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 
@@ -26,9 +27,26 @@ if(isset($_POST['username'])){
 }
 
 ?>
+<html>
 
-            <form method="post" action="login.php">
-            Username: <input type="text" name="username" /><br>
-            Password: <input type="password" name="password" /><br>
-            <input type="submit" name="submit" value="Log In" />
+
+    <head>
+        <title>Login Page</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/myStyle.css" rel="stylesheet">
+    </head>
+    <body>
+
+            <form class="form-horizontal" method="post" action="login.php">
+                <div class="control-group">
+                    <label class="control-label" for="Username">Username</label>
+                        <input type="text" name="username" placeholder="Username"/><br>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="Password">Password</label>
+                    <input type="password" name="password" placeholder="Password"/><br>
+                    <input type="submit" class="btn btn-default" name="submit" value="Log In" />
+                </div>
             </form>
+        </body>
+</html>

@@ -29,9 +29,17 @@ if(isset($_POST['username'])){
 }
 
 ?>
-
-            <form method="post" action="sign-up.php">
-            Username: <input type="text" name="username" /><br>
-            Password: <input type="password" name="password" /><br>
-            <input type="submit" name="submit" value="Sign up" />
+        <title>SignUp</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/myStyle.css" rel="stylesheet">
+            <form class="form-horizontal" method="post" action="login.php">
+                <div class="control-group">
+                    <label class="control-label" for="Username">Username</label>
+                        <input type="text" name="username" placeholder="Username"/><br>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="Password">Password</label>
+                    <input type="password" name="password" placeholder="Password"/><br>
+                    <input type="submit" class="btn btn-default" name="Sign Up" value="Sign Up" />
+                </div>
             </form>
