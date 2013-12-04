@@ -1,14 +1,8 @@
-<?php 
+<?php
+include_once 'php_func.php';
 session_start();
 
-$host = "localhost";
-$user = "user";
-$pass = "password";
-$db = "test";
-
-mysql_connect($host, $user, $pass);
-mysql_select_db($db);
-
+connect();
 $guest_timeout = time() - 2 * 60;
 $member_timeout = time() -5 * 60;
 $guest_ip = $_SERVER['REMOTE_ADDR'];
@@ -29,6 +23,7 @@ $sql6 = mysql_query("SELECT guest_ip FROM active_guests");
 $online_guests = mysql_num_rows($sql6);
 $sql7 = mysql_query("SELECT username FROM active_members");
 $online_members = mysql_num_rows($sql7);
+
 
 ?>
 
@@ -149,7 +144,15 @@ $online_members = mysql_num_rows($sql7);
         </div>
         <!--Line word -->
         <div width="100%"class="container col-lg-12 myBG">
-            <h1>Log In</h1><br>
+            <?php
+                if(isset($_SESSION['user'])){
+                    echo '<h1> Welcome ' . $_SESSION['user'] . ' ';
+                    echo '</h1>';
+                }else{
+                    echo  '<h1>Log In</h1><br>';
+  
+                }
+?>
             <p><h3>Online Guests: <?php echo $online_guests; ?></h3></p>
             <p><h3>Online Members: <?php echo $online_members; ?></h3></p>
             
@@ -162,10 +165,12 @@ $online_members = mysql_num_rows($sql7);
                     echo "<a href='sign-up.php' type='button' class='btn btn-default'>Sign Up</a>";
                 }else{
                     echo '<a href="logout.php" type="button" class="btn btn-info">Log Out</a>';
+                    addTravel();
+                    displayLocations();
                 }
-            ?>
-            
-            
+
+              
+            ?>   
             
             
             

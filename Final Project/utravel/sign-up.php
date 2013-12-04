@@ -32,7 +32,7 @@ if(isset($_POST['username'])){
         <title>SignUp</title>
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/myStyle.css" rel="stylesheet">
-            <form class="form-horizontal" method="post" action="login.php">
+            <form class="form-horizontal" method="post" action="sign-up.php">
                 <div class="control-group">
                     <label class="control-label" for="Username">Username</label>
                         <input type="text" name="username" placeholder="Username"/><br>
